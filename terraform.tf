@@ -1,9 +1,9 @@
 provider "aws" {
-  region= "us-west-2"
   access_key = "AKIA47CRWAQBYT7GWPNB"
-  secret_key = "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"
+  secret_key = "QQ5jJdR7oh7j9KJvPosEXyZcKj5v2fztlxCcEIp9"
+  region= "us-west-1"
 }
-resource "aws_instance" "server01" {
-  ami       = "ami-0cf2b4e024cdb6960"
+resource "aws_instance" "server4" {
+  ami       = "ami-08012c0a9ee8e21c4"
   instance_type = "t2.micro"
 }
