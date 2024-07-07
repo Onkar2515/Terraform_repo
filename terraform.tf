@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = ""
-  secret_key = ""
+  AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
+  AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
   region= "us-west-1"
 }
 resource "aws_instance" "server4" {
